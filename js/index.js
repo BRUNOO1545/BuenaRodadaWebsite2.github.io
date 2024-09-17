@@ -4,17 +4,20 @@
 
     function pageStartup() {
         let pageStartupDiv = document.getElementById("pageStartupDiv");
+        let pageThemeIcon = document.getElementById("navColorSchemeChanger");
 
         pageStarted = true;
         navHamburgerInstantCollapse();
         navApplyColorScheme(colorSchemeData.load());
         pageStartupDiv.classList = "startup-div startup-loaded";
+        pageThemeIcon.style.animation = "nav-theme-show 0.8s forwards ease";
     }
 
 //#endregion
 
 //#region Nav and Hamburger
     
+    // Vars
     const colorSchemeData = {
         save: function(scheme) {
             localStorage.setItem("colorScheme", parseInt(scheme));
@@ -67,7 +70,7 @@
         navHamburgerCollapse();
     });
 
-    // Color scheme changer
+    // Apply color scheme
     function navApplyColorScheme(scheme) {
         let navColorSchemeChanger = document.getElementById("navColorSchemeChanger");
         let svgClass = document.getElementsByClassName("svg-color");

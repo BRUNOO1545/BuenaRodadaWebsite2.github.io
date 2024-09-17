@@ -305,12 +305,10 @@
     -moz-transition: scale 0.1s linear;
     -ms-transition: scale 0.1s linear;
     -o-transition: scale 0.1s linear;
-    animation: nav-theme-show 1s forwards ease;
-    -webkit-animation: nav-theme-show 1s forwards ease;
 }
 
 .nav-theme img:hover {
-    scale: 1.05;
+    scale: 1.1;
     cursor: pointer;
 }
 
