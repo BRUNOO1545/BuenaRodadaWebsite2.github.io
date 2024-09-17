@@ -163,6 +163,18 @@
     }
 }
 
+@keyframes nav-theme-show {
+    0% {
+        rotate: 0deg;
+    }
+    30% {
+        rotate: -90deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
 
 /* Other */
 .disable-scrolling {
@@ -259,6 +271,15 @@
     height: auto;
     margin: 10px;
     cursor: pointer;
+    transition: scale 0.1s linear;
+    -webkit-transition: scale 0.1s linear;
+    -moz-transition: scale 0.1s linear;
+    -ms-transition: scale 0.1s linear;
+    -o-transition: scale 0.1s linear;
+}
+
+.nav-image:hover {
+    scale: 1.1;
 }
 
 .nav-options-div {
@@ -279,6 +300,13 @@
     width: 30px;
     height: auto;
     margin: 10px;
+    transition: scale 0.1s linear;
+    -webkit-transition: scale 0.1s linear;
+    -moz-transition: scale 0.1s linear;
+    -ms-transition: scale 0.1s linear;
+    -o-transition: scale 0.1s linear;
+    animation: nav-theme-show 1s forwards ease;
+    -webkit-animation: nav-theme-show 1s forwards ease;
 }
 
 .nav-theme img:hover {
@@ -290,6 +318,11 @@
     width: 40px;
     height: auto;
     margin: 10px;
+    transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
 }
 
 .nav-hamburger img:hover {
