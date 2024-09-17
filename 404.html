@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="./assets/page/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/index.js"></script>
+        <title>Página no encotrada</title>
+    </head>
+
+    <body class="body-main" onload="pageStartup()">
+        <div class="startup-div disable-scrolling" id="pageStartupDiv">
+            <img src="./assets/org/buena_rodada_8.svg" alt="Buena Rodada Logo">
+            <p>Cargando página</p>
+        </div>
+
+        <nav class="nav-main" id="navMain">
+            <img src="./assets/org/buena_rodada_8.svg" alt="Buena Rodada Logo" class="nav-image" onclick="location.href='./index.html';">
+
+            <div class="nav-options-div">
+                <ul class="nav-options">
+                    <li><a href="./index.html#home">Inicio</a></li>
+                    <!-- <li><a href="./index.html#aboutus" class="nav-options-mobile-button">Quienes somos</a></li> -->
+                    <li><a href="./form.html#register">Inscripciones</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+                
+                <a class="nav-theme" onclick="navChangeColorScheme()">
+                    <img src="./assets/page/mode_auto.svg" alt="Menu" id="navColorSchemeChanger" class="svg-color">
+                </a>
+                
+                <a class="nav-hamburger" onclick="navHamburgerInteract()">
+                    <img src="./assets/page/hamburger.svg" alt="Menu" id="navHamburgerIcon" class="svg-color">
+                </a>
+            </div>
+        </nav>
+        
+        <div id="navMobileOptions" class="nav-options-mobile" onclick="navHamburgerCollapse()">
+            <ul>
+                <li><a href="./index.html#home" class="nav-options-mobile-button">Inicio</a></li>
+                <!-- <li><a href="./index.html#aboutus" class="nav-options-mobile-button">Quienes somos</a></li> -->
+                <li><a href="./form.html#register" class="nav-options-mobile-button">Inscripciones</a></li>
+                <li><a href="#contact" class="nav-options-mobile-button">Contacto</a></li>
+            </ul>
+        </div>
+        
+        <main class="container" onclick="navHamburgerCollapse()">
+            <p class="container-extra-title">404</p>
+            <img class="container-img" src="./assets/org/buena_rodada_8.svg" alt="Buena Rodada Logo">
+            <p class="container-title">Página no encontrada</p>
+            <br>
+            <br>
+            <a class="container-button" href="./index.html">Volver al Inicio</a>
+        </main>
+
+        <footer class="footer-container" id="contact" onclick="navHamburgerCollapse()">
+            <p class="footer-container-title">Contactanos</p>
+
+            <div class="footer-container-content">
+                <img class="footer-container-logo"src="./assets/org/buena_rodada_8.svg" alt="Buena Rodada Logo" onclick="location.href='./index.html';">
+                
+                <div class="footer-divisor"></div>
+
+                <div class="footer-subcontainer">
+                    <a href="https://wa.me/+5491162284808">
+                        <img src="./assets/page/logo_whatsapp.svg" alt="Whatsapp Logo" class="svg-color">
+                        <p>Whatsapp</p>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/buenarodadaciclismoinclusivosv">
+                        <img src="./assets/page/logo_instagram.svg" alt="Instagram Logo" class="svg-color">
+                        <p>Instagram</p>
+                    </a>
+                    
+                    <a href="https://www.facebook.com/profile.php?id=61563568111874&mibextid=ZbWKwL">
+                        <img src="./assets/page/logo_facebook.svg" alt="Facebook Logo" class="svg-color">
+                        <p>Facebook</p>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer-container-copy">©2024 Mekanical Web Services</p>
+        </footer>
+    </body>
+</html>

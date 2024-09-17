@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="./assets/page/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/index.js"></script>
+        <title>Inicio | Buena Rodada</title>
+
+        <!-- Robots -->
+        <meta name="description" content="Descripcion buena rodada"/>
+        <meta name="keywords" content="Buena Rodada, Carreras, Inscripciones"/>
+        <meta name="author" content="Buena Rodada"/>
+        <meta name="robots" content="index, notranslate, nosnippet, noarchive, noimageindex"> <!-- Modify this later -->
+        <!-- <meta name="google-site-verification" content=""/> --> <!-- Add sitemap.xml later -->
+        <meta property="og:title" content="Buena Rodada"/>
+        <meta property="og:site_name" content="Buena Rodada"/>
+        <meta property="og:description" content="Ciclismo Inclusivo"/> <!-- Modify this later -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://coffee-mug-games.github.io/assets/logo/page/og_image.png"/> <!-- Add image URL later -->
+        <meta property="og:image:alt" content="Buena Rodada"/>
+        <meta property="og:image:type" content="image/jpg"/>
+        <link rel="canonical" href="pagina.com"/> <!-- Add page link later (for example: the cannonical url for coffee mug games is https://coffee-mug-games.github.io/) -->
+        <meta property="og:url" content="https://coffee-mug-games.github.io/"/> <!-- Add later (same as cannonical URL) -->
+        <meta property="og:locale" content="es_AR"/>
+    </head>
+
+    <body class="body-main" onload="pageStartup()">
+        <div class="startup-div disable-scrolling" id="pageStartupDiv">
+            <img src="./assets/org/buena_rodada_8.svg" alt="Buena Rodada Logo">
+            <p>Cargando página</p>
+        </div>
+
+        <nav class="nav-main" id="navMain">
+            <img src="./assets/org/buena_rodada_8.svg" alt="Buena Rodada Logo" class="nav-image" onclick="location.href='./index.html';">
+
+            <div class="nav-options-div">
+                <ul class="nav-options">
+                    <li><a href="#home">Inicio</a></li>
+                    <!-- <li><a href="#aboutus" class="nav-options-mobile-button">Quienes somos</a></li> -->
+                    <li><a href="#register">Inscripciones</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+                
+                <a class="nav-theme" onclick="navChangeColorScheme()">
+                    <img src="./assets/page/mode_auto.svg" alt="Menu" id="navColorSchemeChanger" class="svg-color">
+                </a>
+                
+                <a class="nav-hamburger" onclick="navHamburgerInteract()">
+                    <img src="./assets/page/hamburger.svg" alt="Menu" id="navHamburgerIcon" class="svg-color">
+                </a>
+            </div>
+        </nav>
+        
+        <div id="navMobileOptions" class="nav-options-mobile" onclick="navHamburgerCollapse()">
+            <ul>
+                <li><a href="#home" class="nav-options-mobile-button">Inicio</a></li>
+                <!-- <li><a href="#aboutus" class="nav-options-mobile-button">Quienes somos</a></li> -->
+                <li><a href="#register" class="nav-options-mobile-button">Inscripciones</a></li>
+                <li><a href="#contact" class="nav-options-mobile-button">Contacto</a></li>
+            </ul>
+        </div>
+        
+        <main onclick="navHamburgerCollapse()" id="home">
+            <!--
+            <div class="container" id="nextEvents">
+                <p class="container-title">Próximos eventos</p>
+                <p class="container-subtitle">*Carrusel con imagenes principales*</p>
+            </div>
+            -->
+
+            <div class="container" id="register">
+                <p class="container-title">Inscripciones</p>
+
+                <div class="container-item-row">
+                    <div class="container-item">
+                        <img class="container-item-img"src="./assets/images/portait1.jpeg" alt="Carrera de Ciclismo 1">
+                        <p class="container-item-title">Rural Bike - 7 de noviembre</p>
+                        <p class="container-item-subtitle">Buena Rodada Ciclismo Inclusivo</p>
+                        <a class="container-item-button" href="./form.html">Más Información</a>
+                    </div>
+
+                    <div class="container-item">
+                        <img class="container-item-img"src="./assets/images/portait2.jpeg" alt="Carrera de Ciclismo 2">
+                        <p class="container-item-title">Carrera 2 - 7 de noviembre</p>
+                        <p class="container-item-subtitle">Buena Rodada Ciclismo Inclusivo</p>
+                        <a class="container-item-button" href="./form.html">Más Información</a>
+                    </div>
+
+                    <div class="container-item">
+                        <img class="container-item-img"src="./assets/images/race3.jpg" alt="Carrera de Ciclismo 3">
+                        <p class="container-item-title">Carrera 3 - 7 de noviembre</p>
+                        <p class="container-item-subtitle">Buena Rodada Ciclismo Inclusivo</p>
+                        <a class="container-item-button" href="./form.html">Más Información</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer-container" id="contact" onclick="navHamburgerCollapse()">
+            <p class="footer-container-title">Contactanos</p>
+
+            <div class="footer-container-content">
+                <img class="footer-container-logo"src="./assets/org/buena_rodada_8.svg" alt="Buena Rodada Logo" onclick="location.href='./index.html';">
+                
+                <div class="footer-divisor"></div>
+
+                <div class="footer-subcontainer">
+                    <a href="https://wa.me/+5491162284808">
+                        <img src="./assets/page/logo_whatsapp.svg" alt="Whatsapp Logo" class="svg-color">
+                        <p>Whatsapp</p>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/buenarodadaciclismoinclusivosv">
+                        <img src="./assets/page/logo_instagram.svg" alt="Instagram Logo" class="svg-color">
+                        <p>Instagram</p>
+                    </a>
+                    
+                    <a href="https://www.facebook.com/profile.php?id=61563568111874&mibextid=ZbWKwL">
+                        <img src="./assets/page/logo_facebook.svg" alt="Facebook Logo" class="svg-color">
+                        <p>Facebook</p>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer-container-copy">©2024 Mekanical Web Services</p>
+        </footer>
+    </body>
+</html>
