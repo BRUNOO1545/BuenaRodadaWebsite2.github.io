@@ -361,7 +361,7 @@
     background-color: var(--color-background);
     border-style: solid;
     border-width: 0px 0px 1px;
-    border-color: var(--color-background-alt);
+    border-color: var(--color-accent);
     border-radius: 0px 0px 15px 15px;
     -webkit-border-radius: 0px 0px 15px 15px;
     -moz-border-radius: 0px 0px 15px 15px;
