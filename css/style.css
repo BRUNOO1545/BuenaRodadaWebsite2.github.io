@@ -149,6 +149,7 @@
     to {
         opacity: 1;
         top: 64px;
+        visibility: visible;
     }
 }
 
@@ -160,6 +161,7 @@
     to {
         opacity: 0;
         top: -200px;
+        visibility: hidden;
     }
 }
 
@@ -352,7 +354,7 @@
 
 .nav-options-mobile {
     position: fixed;
-    z-index: 99;
+    z-index: 998;
     top: 64px;
     left: 0;
     right: 0;
@@ -642,9 +644,9 @@
     width: 0px;
     height: 70px;
     margin: 16px;
-    background-color: var(--color-background-alt);
+    background-color: var(--color-accent);
     border-style: solid;
-    border-color: var(--color-background-alt);
+    border-color: var(--color-accent);
     border-width: 2px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -685,9 +687,20 @@
     font-weight: 700;
     font-style: normal;
     text-align: center;
+    text-decoration: none;
     user-select: none;
     margin: 8px;
     margin-top: 24px;
+    transition: scale 0.2s ease;
+    -webkit-transition: scale 0.2s ease;
+    -moz-transition: scale 0.2s ease;
+    -ms-transition: scale 0.2s ease;
+    -o-transition: scale 0.2s ease;
+}
+
+.footer-container-copy:hover {
+    scale: 1.1;
+    cursor: pointer;
 }
 
 .footer-container-logo {
@@ -695,6 +708,15 @@
     height: auto;
     margin: 12px;
     user-select: none;
+    transition: scale 0.3s ease;
+    -webkit-transition: scale 0.3s ease;
+    -moz-transition: scale 0.3s ease;
+    -ms-transition: scale 0.3s ease;
+    -o-transition: scale 0.3s ease;
+}
+
+.footer-container-logo:hover {
+    scale: 1.1;
     cursor: pointer;
 }
 
